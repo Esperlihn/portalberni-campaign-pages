@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Campaign | Port Alberni</title>
+    <!-- Tailwind CSS CDN for instant styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold tracking-tight text-blue-900">
+                CAMPAIGN <span class="text-red-600">2026</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#platform" class="hover:text-blue-900 transition">Platform</a>
+                <a href="#lawn-signs" class="hover:text-blue-900 transition">Get a Lawn Sign</a>
+                <a href="#donate" class="hover:text-blue-900 transition">Donate</a>
+            </nav>
+            <a href="#donate" class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition">
+                Donate Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero / Landing Section -->
+    <section id="hero" class="bg-blue-900 text-white py-20 px-4 text-center md:text-left">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-blue-800 text-blue-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                    Port Alberni Municipal Campaign
+                </span>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                    A Stronger, Sustainable Future for Port Alberni
+                </h1>
+                <p class="text-lg text-blue-100 mb-8">
+                    Focused on economic renewal, community wellness, responsible forestry, and inclusive leadership for every resident.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#lawn-signs" class="bg-white text-blue-900 hover:bg-blue-50 font-bold px-6 py-3 rounded-md text-center transition">
+                        Request a Lawn Sign
+                    </a>
+                    <a href="#platform" class="border border-blue-300 text-white hover:bg-blue-800 font-semibold px-6 py-3 rounded-md text-center transition">
+                        Read Platform
+                    </a>
+                </div>
+            </div>
+            <!-- Candidate Photo / Graphic Placeholder -->
+            <div class="bg-blue-800 border-2 border-dashed border-blue-700 rounded-xl h-80 flex items-center justify-center text-blue-300">
+                [ Insert Candidate Photo Here ]
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Highlights -->
+    <section id="platform" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Election Platform</h2>
+            <p class="text-gray-600 mt-2">Key priorities for moving our community forward.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Priority 1 -->
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <div class="w-10 h-10 bg-blue-100 text-blue-900 rounded-md flex items-center justify-center font-bold mb-4">01</div>
+                <h3 class="text-xl font-bold mb-2">Economic Resilience</h3>
+                <p class="text-gray-600 text-sm">
+                    Supporting local businesses, advancing Indigenous partnership initiatives, and expanding sustainable forestry and industry opportunities.
+                </p>
+            </div>
+
+            <!-- Priority 2 -->
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <div class="w-10 h-10 bg-blue-100 text-blue-900 rounded-md flex items-center justify-center font-bold mb-4">02</div>
+                <h3 class="text-xl font-bold mb-2">Community & Infrastructure</h3>
+                <p class="text-gray-600 text-sm">
+                    Investing in municipal services, wildfire protection programs, road improvements, and community health resources.
+                </p>
+            </div>
+
+            <!-- Priority 3 -->
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <div class="w-10 h-10 bg-blue-100 text-blue-900 rounded-md flex items-center justify-center font-bold mb-4">03</div>
+                <h3 class="text-xl font-bold mb-2">Accountable Governance</h3>
+                <p class="text-gray-600 text-sm">
+                    Bringing transparent, ethical leadership to council with clear fiscal management and proactive community engagement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lawn Sign Signup Section -->
+    <section id="lawn-signs" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-900">Request a Lawn Sign</h2>
+                <p class="text-gray-600 text-sm mt-1">Show your support in Port Alberni! We'll deliver and install your sign.</p>
+            </div>
+
+            <form action="#" method="POST" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Full Name</label>
+                        <input type="text" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-900 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Phone Number</label>
+                        <input type="tel" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-900 focus:outline-none">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Street Address (Port Alberni)</label>
+                    <input type="text" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-900 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Email Address</label>
+                    <input type="email" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-900 focus:outline-none">
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="volunteer" class="rounded border-gray-300 text-blue-900 focus:ring-blue-900">
+                    <label for="volunteer" class="text-sm text-gray-600">I would also like to volunteer with the campaign.</label>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-md transition">
+                    Request My Lawn Sign
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="py-16 px-4 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">Support the Campaign</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-8 text-sm">
+            Campaign contributions help cover printing lawn signs, brochures, and hosting community events.
+        </p>
+
+        <!-- Financial Compliance Note -->
+        <div class="bg-amber-50 border border-amber-200 p-4 rounded-md text-xs text-amber-800 max-w-xl mx-auto mb-8 text-left">
+            <strong>Elections BC Contribution Rules:</strong> Contributions are permitted only from eligible individuals who are Canadian citizens or permanent residents living in BC. Corporate and union donations are not permitted under BC local election laws.
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+            <a href="PRIMARY_DONATION_LINK" class="bg-white border-2 border-blue-900 text-blue-900 font-bold p-4 rounded-lg hover:bg-blue-900 hover:text-white transition">
+                $50
+            </a>
+            <a href="PRIMARY_DONATION_LINK" class="bg-white border-2 border-blue-900 text-blue-900 font-bold p-4 rounded-lg hover:bg-blue-900 hover:text-white transition">
+                $100
+            </a>
+            <a href="PRIMARY_DONATION_LINK" class="bg-blue-900 text-white font-bold p-4 rounded-lg hover:bg-blue-800 transition">
+                Custom Amount
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer & Elections BC Disclosure -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-xs">
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6">
+            <p class="mb-2">Authorized by Financial Agent for Campaign 2026.</p>
+            <p>© 2026 Port Alberni Campaign. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
