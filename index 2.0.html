@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Atwal for Port Alberni City Council | October 17</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        popBlue: '#0f4c81',
+                        popRed: '#e62b1e',
+                        popYellow: '#ffc83b',
+                        popCream: '#fbf9f1',
+                        popBlack: '#121212',
+                    },
+                    fontFamily: {
+                        display: ['Bungee', 'Impact', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neo': '5px 5px 0px #121212',
+                        'neo-lg': '8px 8px 0px #121212',
+                        'neo-sm': '3px 3px 0px #121212',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Halftone comic texture effect */
+        .halftone-bg {
+            background-color: #0f4c81;
+            background-image: radial-gradient(#1e6bb8 15%, transparent 16%);
+            background-size: 14px 14px;
+        }
+        .halftone-cream {
+            background-color: #fbf9f1;
+            background-image: radial-gradient(#e5dec9 12%, transparent 13%);
+            background-size: 12px 12px;
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="halftone-cream text-popBlack font-sans antialiased selection:bg-popYellow selection:text-popBlack">
+
+    <!-- Sticky Announcement & Header -->
+    <header class="sticky top-0 z-50 bg-white border-b-4 border-popBlack">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#hero" class="flex items-center gap-2">
+                <span class="font-display text-xl sm:text-2xl text-popBlue tracking-wide">SAM ATWAL</span>
+                <span class="bg-popYellow border-2 border-popBlack px-2 py-0.5 text-xs font-black uppercase shadow-neo-sm">Oct 17</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-6 text-sm font-bold uppercase tracking-wider">
+                <a href="#platform" class="hover:text-popRed transition">Platform</a>
+                <a href="#about" class="hover:text-popRed transition">About</a>
+                <a href="#lawn-signs" class="hover:text-popRed transition">Lawn Signs</a>
+                <a href="#donate" class="hover:text-popRed transition">Donate</a>
+            </nav>
+
+            <a href="#lawn-signs" class="bg-popRed hover:bg-red-700 text-white font-black text-xs sm:text-sm uppercase px-4 py-2 rounded border-2 border-popBlack shadow-neo-sm transition active:translate-x-0.5 active:translate-y-0.5 active:shadow-none">
+                Get a Sign
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 space-y-12">
+
+        <!-- Hero Bento Grid (PatternBreak / Shehata inspired) -->
+        <section id="hero" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Main Hero Card -->
+            <div class="lg:col-span-8 halftone-bg text-white p-8 sm:p-12 rounded-2xl border-4 border-popBlack shadow-neo-lg relative overflow-hidden flex flex-col justify-between min-h-[440px]">
+                <div class="z-10">
+                    <div class="inline-flex items-center gap-2 bg-popYellow text-popBlack font-black text-xs uppercase px-3 py-1 border-2 border-popBlack rounded-full shadow-neo-sm mb-6">
+                        <span>⚡ Port Alberni City Council</span>
+                    </div>
+                    <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl leading-none text-white drop-shadow-[4px_4px_0px_#121212] uppercase mb-4">
+                        A Fresh Voice.<br><span class="text-popYellow">Real Action.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg max-w-xl text-blue-100 font-medium leading-relaxed">
+                        Dedicated to sustainable local forestry, strong community infrastructure, Indigenous business partnerships, and transparent council governance.
+                    </p>
+                </div>
+
+                <div class="z-10 flex flex-wrap gap-4 pt-8">
+                    <a href="#lawn-signs" class="bg-popYellow hover:bg-yellow-400 text-popBlack font-display text-sm tracking-wider px-6 py-3 border-3 border-popBlack rounded-xl shadow-neo transition active:translate-x-1 active:translate-y-1 active:shadow-none">
+                        Request Lawn Sign 💥
+                    </a>
+                    <a href="#platform" class="bg-white hover:bg-gray-100 text-popBlack font-bold text-sm uppercase px-6 py-3 border-3 border-popBlack rounded-xl shadow-neo transition active:translate-x-1 active:translate-y-1 active:shadow-none">
+                        View Platform ↓
+                    </a>
+                </div>
+            </div>
+
+            <!-- Vote Action & Quick Info Tile -->
+            <div class="lg:col-span-4 flex flex-col gap-6">
+                <!-- Election Date Burst Card -->
+                <div class="bg-popRed text-white p-6 rounded-2xl border-4 border-popBlack shadow-neo-lg flex flex-col justify-between relative overflow-hidden">
+                    <div class="relative z-10">
+                        <span class="text-xs font-black uppercase tracking-widest bg-popBlack text-white px-2.5 py-1 rounded">Mark Your Calendar</span>
+                        <h2 class="font-display text-3xl sm:text-4xl mt-4 leading-tight uppercase">
+                            Vote Oct 17!
+                        </h2>
+                        <p class="text-sm font-medium text-red-100 mt-2">
+                            General Local Election Day across British Columbia & Port Alberni.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t-2 border-red-800 text-xs font-bold text-red-200 uppercase tracking-wider">
+                        Every Vote Builds Our Valley's Future
+                    </div>
+                </div>
+
+                <!-- Fast Donation Quick-Link -->
+                <div class="bg-popYellow p-6 rounded-2xl border-4 border-popBlack shadow-neo flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-display text-xl text-popBlack uppercase">Fuel The Campaign</h3>
+                        <p class="text-xs font-bold text-gray-800 mt-1">
+                            Grassroots powered. Help print lawn signs and reach voters across our neighborhoods.
+                        </p>
+                    </div>
+                    <a href="#donate" class="mt-4 inline-block text-center bg-popBlack hover:bg-gray-800 text-white font-bold text-xs uppercase px-4 py-3 rounded-lg transition">
+                        Contribute Today →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Bento Section -->
+        <section id="platform" class="pt-6">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="font-display text-2xl sm:text-3xl text-popBlue uppercase">01 / The Platform</span>
+                <div class="flex-1 h-1 bg-popBlack"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Platform Pillar 1 -->
+                <div class="bg-white p-6 rounded-2xl border-4 border-popBlack shadow-neo flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-popYellow border-2 border-popBlack rounded-xl flex items-center justify-center font-display text-lg shadow-neo-sm mb-4">
+                            01
+                        </div>
+                        <h3 class="font-display text-xl mb-3 text-popBlue uppercase">Economic Renewal & Forestry</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Championing local resource management, fostering value-added forestry initiatives, and creating resilient economic partnerships with Indigenous enterprises.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t-2 border-gray-100 text-xs font-black text-popRed uppercase">
+                        Sustainable Prosperity
+                    </div>
+                </div>
+
+                <!-- Platform Pillar 2 -->
+                <div class="bg-white p-6 rounded-2xl border-4 border-popBlack shadow-neo flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-popRed text-white border-2 border-popBlack rounded-xl flex items-center justify-center font-display text-lg shadow-neo-sm mb-4">
+                            02
+                        </div>
+                        <h3 class="font-display text-xl mb-3 text-popBlue uppercase">Community Infrastructure</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Prioritizing proactive wildfire preparedness, safe and connected neighborhood corridors, reliable core municipal services, and essential community recreation assets.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t-2 border-gray-100 text-xs font-black text-popRed uppercase">
+                        Livable Port Alberni
+                    </div>
+                </div>
+
+                <!-- Platform Pillar 3 -->
+                <div class="bg-white p-6 rounded-2xl border-4 border-popBlack shadow-neo flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-popBlue text-white border-2 border-popBlack rounded-xl flex items-center justify-center font-display text-lg shadow-neo-sm mb-4">
+                            03
+                        </div>
+                        <h3 class="font-display text-xl mb-3 text-popBlue uppercase">Accountable Leadership</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Bringing experienced executive project oversight, rigorous fiscal discipline, clear transparency, and direct community communication to council decision-making.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t-2 border-gray-100 text-xs font-black text-popRed uppercase">
+                        Transparent Governance
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Candidate Grid (Audrey Tang / Editorial Layout) -->
+        <section id="about" class="pt-6">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="font-display text-2xl sm:text-3xl text-popBlue uppercase">02 / About Sam</span>
+                <div class="flex-1 h-1 bg-popBlack"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white p-8 rounded-2xl border-4 border-popBlack shadow-neo-lg">
+                <div class="md:col-span-4 bg-gray-100 rounded-xl border-2 border-popBlack border-dashed p-6 flex flex-col items-center justify-center text-center">
+                    <!-- Photo placeholder -->
+                    <div class="w-24 h-24 bg-popYellow rounded-full border-2 border-popBlack flex items-center justify-center font-display text-2xl mb-4">
+                        SA
+                    </div>
+                    <h4 class="font-display text-lg text-popBlue uppercase">Sam Atwal</h4>
+                    <p class="text-xs font-bold text-gray-500 uppercase mt-1">Candidate for Council</p>
+                </div>
+                
+                <div class="md:col-span-8 flex flex-col justify-center space-y-4">
+                    <h3 class="text-2xl font-black text-gray-900 leading-snug">
+                        Executive leadership rooted in natural resources, community service, and local collaboration.
+                    </h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        With extensive experience managing complex capital projects, consulting on strategic resource initiatives, and championing regional forestry coalitions, Sam brings a practical, outcome-driven mindset to municipal governance.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="bg-gray-100 border border-popBlack text-xs font-bold px-3 py-1 rounded-md">Project Management</span>
+                        <span class="bg-gray-100 border border-popBlack text-xs font-bold px-3 py-1 rounded-md">Resource & Forestry Strategy</span>
+                        <span class="bg-gray-100 border border-popBlack text-xs font-bold px-3 py-1 rounded-md">Community Advocacy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Sign-Up & Donation Bento (Mohamed Shehata style forms) -->
+        <section id="lawn-signs" class="pt-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Lawn Sign Order Form -->
+            <div class="lg:col-span-7 bg-white p-8 rounded-2xl border-4 border-popBlack shadow-neo-lg">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-popYellow border border-popBlack text-xs font-black uppercase px-2 py-0.5 rounded">Grassroots Support</span>
+                </div>
+                <h3 class="font-display text-2xl text-popBlue uppercase mb-2">Get Your Lawn Sign</h3>
+                <p class="text-xs text-gray-600 font-medium mb-6">
+                    We deliver and set up signs anywhere in Port Alberni at no cost to you.
+                </p>
+
+                <!-- Update action="YOUR_FORMSPREE_OR_NETLIFY_ENDPOINT" -->
+                <form action="#" method="POST" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-black uppercase text-gray-700 mb-1">First & Last Name</label>
+                            <input type="text" required placeholder="Jane Doe" class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black uppercase text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" required placeholder="(250) 000-0000" class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-black uppercase text-gray-700 mb-1">Street Address (Port Alberni)</label>
+                        <input type="text" required placeholder="1234 4th Avenue" class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-black uppercase text-gray-700 mb-1">Placement Preference</label>
+                        <select class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm font-medium focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+                            <option>Front Lawn / Visible from Street</option>
+                            <option>Corner Lot (High Visibility)</option>
+                            <option>Commercial / Business Location</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full bg-popRed hover:bg-red-700 text-white font-display text-sm uppercase py-3 rounded-lg border-2 border-popBlack shadow-neo transition active:translate-x-0.5 active:translate-y-0.5 active:shadow-none">
+                        Confirm Sign Request 💥
+                    </button>
+                </form>
+            </div>
+
+            <!-- Donation Hub -->
+            <div id="donate" class="lg:col-span-5 bg-popCream p-8 rounded-2xl border-4 border-popBlack shadow-neo flex flex-col justify-between">
+                <div>
+                    <h3 class="font-display text-2xl text-popBlue uppercase mb-2">Campaign Donations</h3>
+                    <p class="text-xs text-gray-700 leading-relaxed mb-6">
+                        Your direct support helps fund community mailers, radio broadcasts, and volunteer outreach throughout Port Alberni.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <a href="PRIMARY_DONATION_LINK" class="bg-white hover:bg-popYellow text-popBlack font-display text-lg py-3 rounded-xl border-2 border-popBlack text-center shadow-neo-sm transition">
+                            $25
+                        </a>
+                        <a href="PRIMARY_DONATION_LINK" class="bg-white hover:bg-popYellow text-popBlack font-display text-lg py-3 rounded-xl border-2 border-popBlack text-center shadow-neo-sm transition">
+                            $50
+                        </a>
+                        <a href="PRIMARY_DONATION_LINK" class="bg-white hover:bg-popYellow text-popBlack font-display text-lg py-3 rounded-xl border-2 border-popBlack text-center shadow-neo-sm transition">
+                            $100
+                        </a>
+                        <a href="PRIMARY_DONATION_LINK" class="bg-popBlack hover:bg-gray-800 text-white font-display text-sm py-3 rounded-xl border-2 border-popBlack flex items-center justify-center transition">
+                            Custom
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border-2 border-popBlack text-[11px] text-gray-600 space-y-1">
+                    <strong class="text-gray-900 block uppercase">Elections BC Rules:</strong>
+                    <p>Only eligible BC residents (Canadian citizens or permanent residents) may contribute. Corporate and union donations are prohibited.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Official Authorization Footer -->
+    <footer class="bg-popBlack text-white mt-16 border-t-4 border-popBlack py-10 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4 text-xs text-gray-400">
+            <div>
+                <p class="font-bold text-white uppercase">Authorized by Premita Saran, Financial Agent</p>
+                <p class="text-gray-400 mt-1">Contact: <a href="mailto:samforcouncillor@gmail.com" class="text-popYellow underline">samforcouncillor@gmail.com</a></p>
+            </div>
+            <div class="text-gray-400">
+                <p>© 2026 Sam Atwal for Port Alberni City Council. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
