@@ -239,36 +239,40 @@
                 </p>
 
                 <!-- Update action="YOUR_FORMSPREE_OR_NETLIFY_ENDPOINT" -->
-                <form action="https://script.google.com/macros/s/AKfycbyU5HZ8u_ErIvLq-G3X9iboZE4xix3tBFifhSirrI6-6r77M1G90RvOF9ahYZLWwJYTuQ/exec" method="POST" class="space-y-4">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-black uppercase text-gray-700 mb-1">First & Last Name</label>
-                            <input type="text" required placeholder="Jane Doe" class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-black uppercase text-gray-700 mb-1">Phone Number</label>
-                            <input type="tel" required placeholder="(250) 000-0000" class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
-                        </div>
-                    </div>
+				<!-- Update action to your Google Apps Script web app URL -->
+				<form action="https://script.google.com/macros/s/AKfycbyU5HZ8u_ErIvLq-G3X9iboZE4xix3tBFifhSirrI6-6r77M1G90RvOF9ahYZLWwJYTuQ/exec" method="POST" class="space-y-4">
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+						<div>
+							<label class="block text-xs font-black uppercase text-gray-700 mb-1">First & Last Name</label>
+							<input type="text" name="name" required placeholder="Jane Doe" 
+								   class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+						</div>
+						<div>
+							<label class="block text-xs font-black uppercase text-gray-700 mb-1">Phone Number</label>
+							<input type="tel" name="phone" required placeholder="(250) 000-0000" 
+								   class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+						</div>
+					</div>
 
-                    <div>
-                        <label class="block text-xs font-black uppercase text-gray-700 mb-1">Street Address (Port Alberni)</label>
-                        <input type="text" required placeholder="1234 4th Avenue" class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
-                    </div>
+					<div>
+						<label class="block text-xs font-black uppercase text-gray-700 mb-1">Street Address (Port Alberni)</label>
+						<input type="text" name="address" required placeholder="1234 4th Avenue" 
+							   class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+					</div>
 
-                    <div>
-                        <label class="block text-xs font-black uppercase text-gray-700 mb-1">Placement Preference</label>
-                        <select class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm font-medium focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
-                            <option>Front Lawn / Visible from Street</option>
-                            <option>Corner Lot (High Visibility)</option>
-                            <option>Commercial / Business Location</option>
-                        </select>
-                    </div>
+					<div>
+						<label class="block text-xs font-black uppercase text-gray-700 mb-1">Placement Preference</label>
+						<select name="placement" class="w-full bg-gray-50 border-2 border-popBlack rounded-lg px-3 py-2 text-sm font-medium focus:outline-none focus:bg-white focus:ring-2 focus:ring-popBlue">
+							<option value="Front Lawn / Visible from Street">Front Lawn / Visible from Street</option>
+							<option value="Corner Lot (High Visibility)">Corner Lot (High Visibility)</option>
+							<option value="Commercial / Business Location">Commercial / Business Location</option>
+						</select>
+					</div>
 
-                    <button type="submit" class="w-full bg-popRed hover:bg-red-700 text-white font-display text-sm uppercase py-3 rounded-lg border-2 border-popBlack shadow-neo transition active:translate-x-0.5 active:translate-y-0.5 active:shadow-none">
-                        Confirm Sign Request 💥
-                    </button>
-                </form>
+					<button type="submit" class="w-full bg-popRed hover:bg-red-700 text-white font-display text-sm uppercase py-3 rounded-lg border-2 border-popBlack shadow-neo transition active:translate-x-0.5 active:translate-y-0.5 active:shadow-none">
+						Confirm Sign Request 💥
+					</button>
+				</form>
             </div>
 
             <!-- Donation Hub -->
